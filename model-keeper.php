@@ -1,5 +1,5 @@
 <?php
-function selectKeepers() {
+function selectKeeper() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT keeper_id, first_name, last_name, contact FROM `keeper`");
