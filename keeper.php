@@ -4,7 +4,7 @@ require_once("model-keeper.php";
 
 $pageTitle = "Keeper";
 include "view-header.php";
-$keeper = selectKeeper();
+$keeper = selectKeepers();
 include "view-keeper.php";
 include "view-footer.php";
 ?>
