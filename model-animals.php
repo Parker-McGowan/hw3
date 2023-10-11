@@ -1,5 +1,5 @@
 <?php
-function selectAnimals() {
+function selectAnimal() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT animal_id, animal_name, species_name FROM `animal`");
