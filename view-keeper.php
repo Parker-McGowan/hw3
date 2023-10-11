@@ -14,9 +14,9 @@
 while ($keeper = $keepers->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $keeper['keeper_id']; ?><</td>
-    <td><?php echo $keeper['first_name']; ?><</td>
-      <td><?php echo $keeper['last_name']; ?><</td>
+    <td><?php echo $keeper['keeper_id']; ?></td>
+    <td><?php echo $keeper['first_name']; ?></td>
+      <td><?php echo $keeper['last_name']; ?></td>
     <td><?php echo $keeper['contact']; ?><</td>
   </tr>
   <?php
