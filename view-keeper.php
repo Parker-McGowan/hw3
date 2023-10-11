@@ -11,7 +11,7 @@
   <thead>
     <tbody>
       <?php
-while ($keepers = $keepers->fetch_assoc()) {
+while ($keeper = $keepers->fetch_assoc()) {
   ?>
   <tr>
     <td><?php echo $keeper['keeper_id']; ?><</td>
