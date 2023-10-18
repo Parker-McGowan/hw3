@@ -11,7 +11,7 @@
   <thead>
     <tbody>
       <?php
-while ($animals = $aniamls->fetch_assoc()) {
+while ($animal = $aniaml->fetch_assoc()) {
   ?>
   <tr>
     <td><?php echo $animal['animal_id']; ?></td>
