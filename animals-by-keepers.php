@@ -4,7 +4,7 @@ require_once("model-animals-by-keepers.php");
 
 $pageTitle = "Animal by Keeper";
 include "view-header.php";
-$animals = selectAniamlByKeeper($_GET['id']);
+$animals = selectAnimalByKeeper($_GET['id']);
 include "view-animal-by-keeper.php";
 include "view-footer.php";
 ?>
