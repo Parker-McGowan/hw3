@@ -13,9 +13,9 @@
 while ($habitat = $habitat->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $habitat['habitat_id']; ?><</td>
-    <td><?php echo $habitat['habitat_name']; ?><</td>
-    <td><?php echo $habitat['habitat_type']; ?><</td>
+    <td><?php echo $habitat['habitat_id']; ?></td>
+    <td><?php echo $habitat['habitat_name']; ?></td>
+    <td><?php echo $habitat['habitat_type']; ?></td>
   </tr>
   <?php
 }
