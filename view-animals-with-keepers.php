@@ -7,17 +7,13 @@ while ($animal = $animals->fetch_assoc()) {
     <div class="card-body">
       <h5 class="card-title"><?php echo $animal['animal_name'];?></h5>
       <p class="card-text">
-        <ul class="list-group">
   <?php
-  $keepers = selectAnimalbyKeeper($animal['animal_id']);
+  $keepers = selectAnimalByKeeper($animal['animal_id']);
   while ($keeper = $keeper->fetch_assoc()) {
     ?>
-      <li class="list-group-item"><?php echo $animal['habitat_name']; ?> - <?php echo $animal['habitat_type']; ?></li>
-
       <?php
   }
   ?>
-    </ul>
       </p>
       <p class="card-text"><small class="text-body-secondary">Species: <?php echo $animal['species_name']; ?></small></p>
     </div>
