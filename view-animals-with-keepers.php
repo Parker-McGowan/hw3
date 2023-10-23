@@ -9,7 +9,7 @@ while ($animal = $animals->fetch_assoc()) {
       <p class="card-text">
   <?php
   $keepers = selectAnimalByKeeper($animal['animal_id']);
-  while ($keeper = $keeper->fetch_assoc()) {
+  while ($keeper = $keepers->fetch_assoc()) {
     ?>
       <?php
   }
