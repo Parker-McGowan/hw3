@@ -19,7 +19,7 @@ while ($keeper = $keepers->fetch_assoc()) {
     <td><?php echo $keeper['first_name']; ?></td>
       <td><?php echo $keeper['last_name']; ?></td>
     <td><?php echo $keeper['contact']; ?></td>
-    <td><a href="animals-with-keepers.php?id=<?php echo $instructor['instructor_id']; ?>">Animals</a></td>
+    <td><a href="animals-by-keepers.php?id=<?php echo $keeper['keeper_id']; ?>">Animals</a></td>
   </tr>
   <?php
 }
