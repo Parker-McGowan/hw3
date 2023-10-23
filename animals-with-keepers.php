@@ -1,9 +1,9 @@
 <?php
 require_once("util-db.php");
 require_once("model-animals-with-keepers.php");
-$pageTitle = "Animals with keepers";
+$pageTitle = "Animals with Keepers";
 include "view-header.php";
-$animals = selectAnimalsWithKeepers($_GET['id']);
+$animals = selectAnimals();
 include "view-animals-with-keepers.php";
 include "view-footer.php";
 ?>
