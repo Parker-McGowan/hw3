@@ -1,7 +1,7 @@
 <h1>Animals with keepers</h1>
 <div class="card-group">  
 <?php
-while ($animal = $aniamls->fetch_assoc()) {
+while ($animal = $animals->fetch_assoc()) {
   ?>
   <div class="card">
     <div class="card-body">
