@@ -9,7 +9,7 @@ while ($animal = $animals->fetch_assoc()) {
       <p class="card-text">
         <ul class="list-group">
   <?php
-  $keepers = selectKeeperbyAnimal($animal['animal_id']);
+  $keepers = selectAnimalbyKeeper($animal['animal_id']);
   while ($keeper = $keeper->fetch_assoc()) {
     ?>
       <li class="list-group-item"><?php echo $animal['habitat_name']; ?> - <?php echo $animal['habitat_type']; ?></li>
