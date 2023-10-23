@@ -17,7 +17,12 @@ while ($animal = $animals->fetch_assoc()) {
     <td><?php echo $animal['animal_id']; ?></td>
     <td><?php echo $animal['animal_name']; ?></td>
     <td><?php echo $animal['species_name']; ?></td>
-    <th></th>
+    <td>
+<form method="post" action="habitat-by-animal.php">
+<input type="hidden" name="aid" value="<?php echo $animal['animal_id']; ?>">
+<button type="submit" class="btn btn-primary">Habitat</button>
+</form>
+    </td>
   </tr>
   <?php
 }
