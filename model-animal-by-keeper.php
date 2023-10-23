@@ -2,7 +2,7 @@
 function selectAnimalByKeeper($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT a.animal_id, animal_name, species_name,keeper_id FROM `animal` a where a.keeper_id>=1");
+        $stmt = $conn->prepare("SELECT a.animal_id, animal_name, species_name,keeper_id FROM `animal` a where a.keeper_id=?");
         $stmt->blind_param("i", $aid);
       $stmt->execute();
       $result = $stmt->get_result();
