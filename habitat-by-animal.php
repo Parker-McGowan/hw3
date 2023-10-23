@@ -4,7 +4,7 @@ require_once("model-habitat-by-animal.php");
 
 $pageTitle = "Habitat by Animal";
 include "view-header.php";
-$habitat = selectHabitatbyAnimal($_POST['aid']);
+$habitats = selectHabitatbyAnimal($_POST['aid']);
 include "view-habitat-by-animal.php";
 include "view-footer.php";
 ?>
