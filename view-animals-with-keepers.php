@@ -12,7 +12,7 @@ while ($animal = $animals->fetch_assoc()) {
   $keepers = selectAnimalByKeeper($animal['animal_id']);
   while ($keeper = $keepers->fetch_assoc()) {
     ?>
-    <li class="list-group-item"><?php echo $animal['animal_id']; ?> - <?php echo $animal['animal_name']; ?> - <?php echo $animal['species_name']; ?> - <?php echo $animal['keeper_id']; ?></li>
+    <li class="list-group-item"><?php echo $animal['animal_id']; ?> - <?php echo $animal['animal_name']; ?> - <?php echo $animal['species_name']; ?></li>
       <?php
   }
   ?>
