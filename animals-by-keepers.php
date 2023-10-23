@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-animals-by-keepers.php";
+require_once("model-animals-by-keepers.php");
 
 $pageTitle = "Animal by Keeper";
 include "view-header.php";
