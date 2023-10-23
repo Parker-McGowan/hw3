@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-habitat-by-animal.php";
+require_once("model-habitat-by-animal.php");
 
 $pageTitle = "Habitat by Animal";
 include "view-header.php";
