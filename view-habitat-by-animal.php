@@ -10,7 +10,7 @@
   <thead>
     <tbody>
       <?php
-while ($habitats = $habitat->fetch_assoc()) {
+while ($habitat = $habitat->fetch_assoc()) {
   ?>
   <tr>
     <td><?php echo $habitat['habitat_id']; ?></td>
