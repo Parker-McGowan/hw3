@@ -25,6 +25,7 @@
     <label for="aSpecies" class="form-label">Animal species</label>
     <input type="text" class="form-control" id="aSpecies" name="aSpecies">
   </div>
+   <input type="hidden" name="actionType" value="Add">      
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
       </div>
