@@ -27,11 +27,11 @@
   </div>
           <div class="mb-3">
     <label for="aHabitatid<?php echo $animal['animal_id']; ?>" class="form-label">Habitat id</label>
-    <input type="text" class="form-control" id="aHabitatid<?php echo $animal['animal_id']; ?>" name="aHabitatid" value="<?php echo $animal['Habitat_id']; ?>">
+    <input type="text" class="form-control" id="aHabitatid<?php echo $animal['animal_id']; ?>" name="aHabitatid" value="<?php echo $animal['habitat_id']; ?>">
   </div>
           <div class="mb-3">
     <label for="aKeeperid<?php echo $animal['animal_id']; ?>" class="form-label">Keeper id</label>
-    <input type="text" class="form-control" id="aKeeperid<?php echo $animal['animal_id']; ?>" name="aKeeperid" value="<?php echo $animal['Keeper_id']; ?>">
+    <input type="text" class="form-control" id="aKeeperid<?php echo $animal['animal_id']; ?>" name="aKeeperid" value="<?php echo $animal['keeper_id']; ?>">
   </div>
    <input type="hidden" name="cid" value="<?php echo $animal['animal_id']; ?>">
    <input type="hidden" name="actionType" value="Edit">      
