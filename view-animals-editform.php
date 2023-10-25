@@ -33,7 +33,7 @@
     <label for="aKeeperid<?php echo $animal['animal_id']; ?>" class="form-label">Keeper id</label>
     <input type="text" class="form-control" id="aKeeperid<?php echo $animal['animal_id']; ?>" name="aKeeperid" value="<?php echo $animal['keeper_id']; ?>">
   </div>
-   <input type="hidden" name="cid" value="<?php echo $animal['animal_id']; ?>">
+   <input type="hidden" name="aid" value="<?php echo $animal['animal_id']; ?>">
    <input type="hidden" name="actionType" value="Edit">      
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
