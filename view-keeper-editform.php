@@ -26,7 +26,7 @@
   </div>
           <div class="mb-3">
     <label for="kContact<?php echo $keeper['keeper_id']; ?>" class="form-label">Contact</label>
-    <input type="text" class="form-control" id="kContact<?php echo $keeper['keeper_id']; ?>" name="kContact" value="<?php echo $keeper['Contact']; ?>">
+    <input type="text" class="form-control" id="kContact<?php echo $keeper['keeper_id']; ?>" name="kContact" value="<?php echo $keeper['contact']; ?>">
   </div>
       
    <input type="hidden" name="kid" value="<?php echo $keeper['keeper_id']; ?>">
