@@ -13,11 +13,11 @@ function selectAnimal() {
     }
 }
 
-function insertAnimal($aName, $aSpecies, $aHabitatid, $aKeeperid) {
+function deleteAnimal($aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `animal` (`animal_name`, `species_name`, `habitat_id`, `keeper_id`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ss", $aName, $aSpecies, $aHabitatid, $aKeeperid);
+        $stmt = $conn->prepare("delete from animal where animal_id=?");
+        $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
