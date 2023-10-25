@@ -33,6 +33,9 @@ while ($keeper = $keepers->fetch_assoc()) {
     <td><a href="animals-by-keepers.php?id=<?php echo $keeper['keeper_id']; ?>">Animals</a></td>
   </tr>
       </td>
+             <?php
+include "view-animals-editform.php";
+?>
     <td>
       <form method="post" action="">
 <input type="hidden" name="kid" value="<?php echo $keeper['keeper_id']; ?>">
