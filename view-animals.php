@@ -29,6 +29,9 @@ while ($animal = $animals->fetch_assoc()) {
     <td><?php echo $animal['animal_name']; ?></td>
     <td><?php echo $animal['species_name']; ?></td>
     <td>
+         <?php
+include "view-animals-editform.php";
+?>
     </td>
     <td>
       <form method="post" action="">
