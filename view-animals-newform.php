@@ -16,16 +16,16 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method ="post" action="">
   <div class="mb-3">
     <label for="aName" class="form-label">Animal name</label>
     <input type="text" class="form-control" id="aName" name="aName">
   </div>
 <div class="mb-3">
-    <label for="aDesc" class="form-label">Animal desc</label>
-    <input type="text" class="form-control" id="aName" name="aName">
+    <label for="aSpecies" class="form-label">Animal species</label>
+    <input type="text" class="form-control" id="aSpecies" name="aSpecies">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Save</button>
 </form>
       </div>
     </div>
