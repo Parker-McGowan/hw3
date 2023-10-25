@@ -7,7 +7,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editAnimalModal<?php echo $animal['animal_id']; ?>" tabindex="-1" aria-labelledby="editAnimalModalLabel<?php echo $animal['animal_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editKeeperModal<?php echo $animal['keeper_id']; ?>" tabindex="-1" aria-labelledby="editKeeperModalLabel<?php echo $keeper['keeper_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
