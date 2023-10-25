@@ -43,7 +43,7 @@ function deleteKeeper($kid) {
 function updateKeeper($kFirst, $kLast, $kContact, $kid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `keeper` set `first_name` = ?, `last_name` = ?, `contact` = ?, `keeper_id` = ? where keeper_id = ?");
+        $stmt = $conn->prepare("update `keeper` set `first_name` = ?, `last_name` = ?, `contact` = ? where keeper_id = ?");
         $stmt->bind_param("sssi", $kFirst, $kLast, $kContact, $kid);
         $success = $stmt->execute();
         $conn->close();
