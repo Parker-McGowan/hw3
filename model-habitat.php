@@ -29,8 +29,8 @@ function deleteHabitat($hid) {
 function updateAnimal($hName, $hType, $hid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `habitat` set `habitat_name` = ?, `habitat_type` = ?, `habitat_id` = ?, `keeper_id` = ? where animal_id = ?");
-        $stmt->bind_param("ssiii", $aName, $aSpecies, $aHabitatid, $aKeeperid, $aid);
+        $stmt = $conn->prepare("update `habitat` set `habitat_name` = ?, `habitat_type` = ?, where habitat_id = ?");
+        $stmt->bind_param("ssiii", $hName, $hType, $hid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -40,11 +40,11 @@ function updateAnimal($hName, $hType, $hid) {
     }
 }
 
-function insertAnimal($aName, $aSpecies, $aHabitatid, $aKeeperid) {
+function insertAnimal($hName, $hType) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `animal` (`animal_name`, `species_name`, `habitat_id`, `keeper_id`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssii", $aName, $aSpecies, $aHabitatid, $aKeeperid);
+        $stmt = $conn->prepare("INSERT INTO `habitat` (`habitat_name`, `habitat_type`) VALUES (?, ?,)");
+        $stmt->bind_param("ssii", $hName, $hType);
         $success = $stmt->execute();
         $conn->close();
         return $success;
