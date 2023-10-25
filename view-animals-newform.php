@@ -25,6 +25,14 @@
     <label for="aSpecies" class="form-label">Animal species</label>
     <input type="text" class="form-control" id="aSpecies" name="aSpecies">
   </div>
+          <div class="mb-3">
+    <label for="aHabitatid" class="form-label">Habitat id</label>
+    <input type="text" class="form-control" id="aHabitatid" name="aHabitatid">
+  </div>
+          <div class="mb-3">
+    <label for="aKeeperid" class="form-label">Keeper id</label>
+    <input type="text" class="form-control" id="aKeeperid" name="aKeeperid">
+  </div>
    <input type="hidden" name="actionType" value="Add">      
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
