@@ -2,7 +2,7 @@
 function selectAnimal() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT animal_id, animal_name, species_name FROM `animal`");
+        $stmt = $conn->prepare("SELECT animal_id, animal_name, species_name, habitat_id, keeper_id FROM `animal`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
