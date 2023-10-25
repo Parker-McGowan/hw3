@@ -23,7 +23,7 @@
   </div>
 <div class="mb-3">
     <label for="aSpecies<?php echo $animal['animal_id']; ?>" class="form-label">Animal species</label>
-    <input type="text" class="form-control" id="aSpecies<?php echo $animal['animal_id']; ?>" name="aSpecies" value="<?php echo $animal['animal_species']; ?>">
+    <input type="text" class="form-control" id="aSpecies<?php echo $animal['animal_id']; ?>" name="aSpecies" value="<?php echo $animal['species_name']; ?>">
   </div>
           <div class="mb-3">
     <label for="aHabitatid<?php echo $animal['animal_id']; ?>" class="form-label">Habitat id</label>
