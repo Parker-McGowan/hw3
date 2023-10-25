@@ -31,11 +31,12 @@ while ($keeper = $keepers->fetch_assoc()) {
       <td><?php echo $keeper['last_name']; ?></td>
     <td><?php echo $keeper['contact']; ?></td>
     <td><a href="animals-by-keepers.php?id=<?php echo $keeper['keeper_id']; ?>">Animals</a></td>
-  </tr>
       </td>
+  <td>
              <?php
-include "view-animals-editform.php";
+include "view-keeper-editform.php";
 ?>
+  </td>
     <td>
       <form method="post" action="">
 <input type="hidden" name="kid" value="<?php echo $keeper['keeper_id']; ?>">
@@ -48,7 +49,7 @@ include "view-animals-editform.php";
 </button>
 </form>
     </td>
-    <td>
+    </tr>
   <?php
 }
 ?>
