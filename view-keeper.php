@@ -17,6 +17,8 @@ include "view-keeper-newform.php";
   <th>Last_Name</th>
     <th>Contact</th>
     <th></th>
+    <th></th>
+    <th></th>
   </tr>
   <thead>
     <tbody>
