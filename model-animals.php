@@ -31,7 +31,7 @@ function updateAnimal($aName, $aSpecies, $aHabitatid, $aKeeperid, $aid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `animal` set `animal_name` = ?, `species_name` = ?, `habitat_id` = ?, `keeper_id` = ? where animal_id = ?");
-        $stmt->bind_param("ssiii", $aName, $aSpecies, $aHabitatid, $aKeeperid, $cid);
+        $stmt->bind_param("ssiii", $aName, $aSpecies, $aHabitatid, $aKeeperid, $aid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
