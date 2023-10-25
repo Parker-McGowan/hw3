@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
 switch ($_POST['actionType']) { 
   case "Add":
-    insertAnimal($_POST['aName'], $_POST['aSpecies'], $_POST['HabitatID'], $_POST['KeeperID']);
+    insertAnimal($_POST['aName'], $_POST['aSpecies'], $_POST['aHabitatid'], $_POST['aKeeperid']);
   break;
   }
 }
