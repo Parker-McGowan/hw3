@@ -45,7 +45,7 @@ function insertAnimal($aName, $aSpecies, $aHabitatid, $aKeeperid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `animal` (`animal_name`, `species_name`, `habitat_id`, `keeper_id`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ss", $aName, $aSpecies, $aHabitatid, $aKeeperid);
+        $stmt->bind_param("ssii", $aName, $aSpecies, $aHabitatid, $aKeeperid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
