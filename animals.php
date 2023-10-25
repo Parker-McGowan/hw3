@@ -15,7 +15,7 @@ switch ($_POST['actionType']) {
     }
   break;
    case "Delete":
-    if (deleteCourse($_POST['aid'])) {
+    if (deleteAnimal($_POST['aid'])) {
      echo '<div class="alert alert-success" role="alert">Animal deleted.</div>';
     } else {
       echo '<div class="alert alert-danger" role="alert">Error.</div>';
