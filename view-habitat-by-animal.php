@@ -1,4 +1,10 @@
-<h1>Habitat by animal</h1>
+<div class="row">
+  <div class="col">
+    <h1>Habitat by animal</h1>
+  </div>
+  <div class="col-auto">
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table">
 <thead>
