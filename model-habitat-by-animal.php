@@ -1,9 +1,9 @@
 <?php
-function selectHabitatbyAnimal($aid) {
+function selectHabitatbyAnimal($hid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT h.habitat_id, habitat_name, habitat_type FROM `habitat` h join animal a on a.habitat_id = h.habitat_id WHERE a.animal_id = ?");
-        $stmt->bind_param("i", $aid);
+        $stmt->bind_param("i", $hid);
       $stmt->execute();
       $result = $stmt->get_result();
         $conn->close();
@@ -14,7 +14,7 @@ function selectHabitatbyAnimal($aid) {
     }
 }
 
-function deleteHabitat($hid) {
+function deleteHabitatbyAnimal($hid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from habitat where habitat_id=?");
@@ -28,7 +28,7 @@ function deleteHabitat($hid) {
     }
 }
 
-function updateHabitat($hName, $hType, $hid) {
+function updateHabitatbyAnimal($hName, $hType, $hid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `habitat` set `habitat_name` = ?, `habitat_type` = ? where habitat_id = ?");
@@ -42,10 +42,10 @@ function updateHabitat($hName, $hType, $hid) {
     }
 }
 
-function insertHabitat($hName, $hType) {
+function insertHabitatbyAnimal($hName, $hType) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `habitat` (`habitat_name`, `habitat_type`) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `habitat` (`habitat_id`, `habitat_name`, `habitat_type`) VALUES (?, ?)");
         $stmt->bind_param("ss", $hName, $hType);
         $success = $stmt->execute();
         $conn->close();
