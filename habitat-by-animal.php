@@ -31,7 +31,7 @@ switch ($_POST['actionType']) {
   }
 }
 
-$habitats = selectHabitatbyAnimal($_POST['hid']);
+$habitats = selectHabitatbyAnimal($_POST['aid']);
 include "view-habitat-by-animal.php";
 include "view-footer.php";
 ?>
