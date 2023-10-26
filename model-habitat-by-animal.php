@@ -45,7 +45,7 @@ function updateHabitatbyAnimal($hName, $hType, $hid) {
 function insertHabitatbyAnimal($hName, $hType) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `habitat` (`habitat_id`, `habitat_name`, `habitat_type`) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `habitat` (`habitat_name`, `habitat_type`) VALUES (?, ?)");
         $stmt->bind_param("ss", $hName, $hType);
         $success = $stmt->execute();
         $conn->close();
