@@ -15,6 +15,10 @@ include "view-habitat-by-animal-newform.php";
     <th>ID</th>
     <th>Name</th>
     <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+
   </tr>
   <thead>
     <tbody>
@@ -25,6 +29,10 @@ while ($habitat = $habitats->fetch_assoc()) {
     <td><?php echo $habitat['habitat_id']; ?></td>
     <td><?php echo $habitat['habitat_name']; ?></td>
     <td><?php echo $habitat['habitat_type']; ?></td>
+    <td>
+    </td>
+    <td>
+    </td>
   </tr>
   <?php
 }
