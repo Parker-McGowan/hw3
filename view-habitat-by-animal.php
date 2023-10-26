@@ -3,6 +3,7 @@
     <h1>Habitat by animal</h1>
   </div>
   <div class="col-auto">
+    
   </div>
 </div>
 <div class="table-responsive">
