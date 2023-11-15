@@ -1,6 +1,7 @@
 <h1>Keepers</h1>
 <div class="table-responsive">
   <table class="table">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     const mixedChart = new Chart(ctx, {
     data: {
         datasets: [{
