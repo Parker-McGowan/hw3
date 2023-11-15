@@ -9,6 +9,7 @@
     <th>Contact</th>
     <th></th>
   </tr>
+  
 data = {
     datasets: [{
         data: [10, 20, 30]
