@@ -24,7 +24,7 @@ while ($animal = $animals->fetch_assoc()) {
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
  <?php
-$animals = selectAnimals();
+$animals = selectAnimal();
 while ($animal = $animals->fetch_assoc()) {
  echo "'" . $animal['species_name'] . "', ";
 }
