@@ -8,3 +8,5 @@ $animals = selectAnimal();
 include "view-animals-chart.php";
 include "view-footer.php";
 ?>
+
+
