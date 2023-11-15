@@ -1,27 +1,7 @@
 <h1>Keepers</h1>
 <div class="table-responsive">
   <table class="table">
-    <div>
-  <canvas id="myChart"></canvas>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script> 
-    const mixedChart = new Chart(ctx, {
-    data: {
-        datasets: [{
-            type: 'bar',
-            label: 'Bar Dataset',
-            data: [10, 20, 30, 40]
-        }, {
-            type: 'line',
-            label: 'Line Dataset',
-            data: [50, 50, 50, 50],
-        }],
-        labels: ['January', 'February', 'March', 'April']
-    },
-    options: options
-});
-      </script>
+    
  
 <thead>
   <tr>
