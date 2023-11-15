@@ -15,7 +15,7 @@
         data: [
 <?php
 while ($animal = $animals->fetch_assoc()) {
- echo $animal['species_name'] . ", ";
+ echo $animal['num_animals'] . ", ";
 }
 ?>     
         ]
@@ -26,7 +26,7 @@ while ($animal = $animals->fetch_assoc()) {
  <?php
 $animals = selectAnimals();
 while ($animal = $animals->fetch_assoc()) {
- echo "'" . $animal['animal_name'] . "', ";
+ echo "'" . $animal['species_name'] . "', ";
 }
 ?>
     ]
