@@ -2,6 +2,7 @@
 <div class="table-responsive">
   <table class="table">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script> 
     const mixedChart = new Chart(ctx, {
     data: {
         datasets: [{
@@ -17,6 +18,7 @@
     },
     options: options
 });
+      </script>
  
 <thead>
   <tr>
