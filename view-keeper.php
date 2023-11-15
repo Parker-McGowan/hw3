@@ -1,6 +1,22 @@
 <h1>Keepers</h1>
 <div class="table-responsive">
   <table class="table">
+    const mixedChart = new Chart(ctx, {
+    data: {
+        datasets: [{
+            type: 'bar',
+            label: 'Bar Dataset',
+            data: [10, 20, 30, 40]
+        }, {
+            type: 'line',
+            label: 'Line Dataset',
+            data: [50, 50, 50, 50],
+        }],
+        labels: ['January', 'February', 'March', 'April']
+    },
+    options: options
+});
+ 
 <thead>
   <tr>
     <th>ID</th>
