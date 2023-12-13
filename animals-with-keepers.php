@@ -32,7 +32,7 @@ switch ($_POST['actionType']) {
 }
 
 
-$animals = selectAnimal();
+$animals-with-keepers = selectAnimal();
 include "view-animals-with-keepers.php";
 include "view-footer.php";
 ?>
